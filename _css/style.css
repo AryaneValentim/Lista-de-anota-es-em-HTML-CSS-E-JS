@@ -8,7 +8,16 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(135deg, green, white);
+    background-image: linear-gradient(-225deg, #0a2239 0, #53a2be 29%,#1d84b5 67%,#2a2239 100%);
+    background-size:  500% 500%;
+    animation: animação 15s linear infinite;
+}
+
+@keyframes animação {
+    50%{
+        background-position:  100% 100%;
+    }
+    
 }
 
 .container {
@@ -44,7 +53,7 @@ body {
 
 #novatarefa input:focus {
     outline: none;
-    border-color: rgb(137, 206, 27);
+    border-color: #53a2be;
 
 }
 
@@ -57,7 +66,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    background-color: rgb(25, 160, 108);
+    background-color: #228a85;
     border: none;
     color:#fff;
     cursor: pointer;
